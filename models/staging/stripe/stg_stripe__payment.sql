@@ -13,7 +13,7 @@ renamed as (
         orderid as order_id,
         paymentmethod,
         status as payment_status,
-        amount,
+        amount / 100 as amount, -- convert cent to dollar
         created,
         _batched_at
 
